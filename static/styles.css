@@ -1,0 +1,116 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    overflow: hidden; /* Prevents overall page scrolling */
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Input section styling */
+.input-section {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Solution section styling */
+.solution-section {
+    flex: 2;
+    padding-left: 20px;
+    text-align: left;
+    max-height: 300px; /* Set max height for the solution list */
+    overflow-y: auto; /* Enable vertical scrolling for the solution section */
+    border-left: 2px solid #ddd; /* Visual separation between sections */
+}
+
+.solution-section h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Solution list styling */
+#solution {
+    list-style-type: none;
+    padding: 0;
+}
+
+#solution li {
+    padding: 8px;
+    background-color: #f1f8ff;
+    margin-bottom: 5px;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
