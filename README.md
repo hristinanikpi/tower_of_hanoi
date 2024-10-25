@@ -11,7 +11,7 @@ This project was done as part of the interview process for the position of the J
 
 The tower of Hanoi is a mathematical puzzle. It consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
 
-![Alt text](images/hanoi.png)
+![Figure 1 Tower of Hanoi Illustration](images/hanoi.png)
 
 ## Problem Statement
 
@@ -35,9 +35,9 @@ I developped an application that solves the Hanoi Towers Puzzle, and has the fol
 ## Algorithm
 
 The problem can be solved with a few different algorithms: 
-1. Iterative 
-1. Recursive 
-1. Q-learning
+1. Iterative - ...
+1. Recursive - ...
+1. Q-learning - ... 
 
 ## Application Diagram 
 
@@ -66,7 +66,11 @@ Language: JavaScript, HTML, CSS
 
 ## Requrements and Installation 
 
-To run the application, clone the repository and install the required packages:
+The application was developed using Python 3. 
+
+Additionally, it uses Python's module Flusk.
+
+First, clone the repository and install the required packages:
 
 ```bash 
 git clone https://github.com/hristinanikpi/tower_of_hanoi.git
@@ -74,9 +78,21 @@ cd tower_of_hanoi
 pip install requirements.txt 
 ```
 
+Afterwards, run the app, use the following command: 
+
+```bash 
+python3 app.py 
+```
+
+## Demonstration 
+
+The application for 3 disks runs as follow: 
+
+![Figure 2 Tower of Hanoi Solver](images/hanoi.png)
+
 ## Solving Time
 
-In order to determine how well the application performs, we wanted to calculate the solving time for:
+In order to determine how well the application performs, we calculated the solving time for:
 - 5 disks
 - 10 disks 
 - 20 disks 
