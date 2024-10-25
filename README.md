@@ -13,7 +13,7 @@ The tower of Hanoi is a mathematical puzzle. It consists of three rods and sever
 
 ![Alt text](images/hanoi.png) 
 
-Figure 1 Tower of Hanoi Illustration
+**Figure 1** Tower of Hanoi Illustration
 
 ## Problem Statement
 
@@ -92,18 +92,23 @@ python3 app.py
 
 The application for 3 disks runs as follow: 
 
-![Alt text](images/Solution_3_disks.png) 
+![Alt text](images/solution_3_disks.png) 
 
-Figure 2 Tower of Hanoi Solver for 3 disks 
+**Figure 2** Tower of Hanoi Solver for 3 disks 
 
 ![Alt text](images/solution_4_disks.png) 
 
-Figure 3 Tower of Hanoi Solver for 4 disks 
+**Figure 3** Tower of Hanoi Solver for 4 disks 
 
 ## Solving Time
 
-In order to determine how well the application performs, we calculated the solving time for:
-- 5 disks
-- 10 disks 
-- 20 disks 
-- 50 disks 
+In order to determine how well the application performs, we calculated the solving time for different numbers of disks.
+
+|    | Recursive Algorithm   | Iterative Algorithm   |
+|------------|:----------:|-----------:|
+| 5| Row 1 Col 2| Row 1 Col 3|
+| 10| Row 2 Col 2| Row 2 Col 3|
+| 20| Row 3 Col 2| Row 3 Col 3|
+| 50| Row 3 Col 2| Row 3 Col 3|
+
+**Table 1** Table of solving time for different numbers of disks for recursive and iterative algorithm
