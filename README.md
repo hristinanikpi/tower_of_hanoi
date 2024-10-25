@@ -11,6 +11,8 @@ This project was done as part of the interview process for the position of the J
 
 The tower of Hanoi is a mathematical puzzle. It consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
 
+![Alt text](images/hanoi.png)
+
 ## Problem Statement
 
 Move all the disks stacked on the first tower over the last tower using a helper tower in the Middle.
@@ -43,7 +45,7 @@ The problem can be solved with a few different algorithms:
 
 ### Back-end 
 
-The back-end service will:
+The back-end will:
 - Calculate the sequence of moves required to solve the puzzle based on the number of disks.
 - Expose an API endpoint that receives the number of disks and returns the steps in JSON format.
 
@@ -53,10 +55,7 @@ API: RESTful JSON API
 
 ### Front-end
 
-Front-End Application:
-
 The front-end will:
-
 - Allow the user to input the number of disks.
 - Consume the back-end API to retrieve the list of moves.
 - Display the steps to solve the puzzle and optionally show the graphical representation of the puzzle.
