@@ -50,7 +50,9 @@ The back-end will:
 - Expose an API endpoint that receives the number of disks and returns the steps in JSON format.
 
 Language: Python 
+
 Framework: Flask (Python) 
+
 API: RESTful JSON API
 
 ### Front-end
@@ -74,7 +76,7 @@ pip install requirements.txt
 
 ## Solving Time
 
-I order to see how the application performs, we wanted to calculate the solving time for:
+In order to determine how well the application performs, we wanted to calculate the solving time for:
 - 5 disks
 - 10 disks 
 - 20 disks 
