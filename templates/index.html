@@ -51,6 +51,77 @@
 
                 const data = await response.json();
 
+                // Display the solution (list of moves) with numbering
+                data.moves.forEach((move, index) => {
+                    const li = document.createElement('li');
+                    li.textContent = `${index + 1}. ${move}`;  // Add numbering to each move
+                    solutionElement.appendChild(li);
+                });
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while solving the puzzle.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tower of Hanoi Solver</h1>
+        <div class="main-content">
+            <div class="input-section">
+                <label for="disks">Number of Disks:</label>
+                <input type="number" id="disks" min="1" required>
+                <button onclick="solveHanoi()">Solve</button>
+            </div>
+            <div class="solution-section">
+                <h2>Solution:</h2>
+                <ul id="solution"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        async function solveHanoi() {
+            const disks = document.getElementById('disks').value;
+            const solutionElement = document.getElementById('solution');
+
+            // Clear previous solution
+            solutionElement.innerHTML = '';
+
+            if (disks < 1) {
+                alert('Please enter a valid number of disks.');
+                return;
+            }
+
+            // Send request to the back-end API
+            try {
+                const response = await fetch('/solve_hanoi', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ disks: parseInt(disks) })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch solution.');
+                }
+
+                const data = await response.json();
+
                 // Display the solution (list of moves)
                 data.moves.forEach(move => {
                     const li = document.createElement('li');
