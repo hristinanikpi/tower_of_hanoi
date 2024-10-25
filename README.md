@@ -11,7 +11,7 @@ This project was done as part of the interview process for the position of the J
 
 The tower of Hanoi is a mathematical puzzle. It consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
 
-![alt text](images/hanoi.png "Figure 1 Tower of Hanoi Illustration")
+![Alt text](images/hanoi.png "Figure 1 Tower of Hanoi Illustration")
 
 ## Problem Statement
 
@@ -38,6 +38,8 @@ The problem can be solved with a few different algorithms:
 1. Iterative - ...
 1. Recursive - ...
 1. Q-learning - ... 
+
+For this application, we chose to implement ... 
 
 ## Application Diagram 
 
@@ -88,7 +90,7 @@ python3 app.py
 
 The application for 3 disks runs as follow: 
 
-![alt text](images/hanoi.png "Figure 2 Tower of Hanoi Solver")
+![Alt text](images/hanoi.png "Figure 2 Tower of Hanoi Solver")
 
 ## Solving Time
 
