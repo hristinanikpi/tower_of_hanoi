@@ -39,7 +39,6 @@ I developped an application that solves the Hanoi Towers Puzzle, and has the fol
 The problem can be solved with a few different algorithms: 
 1. Iterative Algorithm - The iterative algorithm for the Tower of Hanoi employs a systematic approach to move disks without recursion, often utilizing a loop and following specific rules based on the parity of the number of disks. It typically involves moving disks between the rods in a predetermined sequence, ensuring that smaller disks are always placed on top of larger disks. This approach also requires 2<sup>n</sup> − 1 moves, providing an efficient way to solve the puzzle without the overhead of recursive function calls.
 1. Recursive Algorithm - The recursive algorithm for solving the Tower of Hanoi involves breaking down the problem into smaller subproblems. It recursively moves the top n−1n−1 disks from the source rod to an auxiliary rod, then moves the largest disk directly to the destination rod, and finally moves the n−1n−1 disks from the auxiliary rod to the destination rod. This elegant method utilizes the principle of recursion to achieve the solution in 2<sup>n</sup> − 1 moves.
-1. Q-learning - ... 
 
 For this application, we chose to implement ... 
 
@@ -96,6 +95,8 @@ The application for 3 disks runs as follow:
 
 **Figure 2** Tower of Hanoi Solver for 3 disks 
 
+The apllication for 4 disks runs as follow:
+
 ![Alt text](images/solution_4_disks.png) 
 
 **Figure 3** Tower of Hanoi Solver for 4 disks 
@@ -106,9 +107,9 @@ In order to determine how well the application performs, we calculated the solvi
 
 |    | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
-| 5| Row 1 Col 2| Row 1 Col 3|
-| 10| Row 2 Col 2| Row 2 Col 3|
-| 20| Row 3 Col 2| Row 3 Col 3|
-| 50| Row 3 Col 2| Row 3 Col 3|
+| 5 disks| Row 1 Col 2| Row 1 Col 3|
+| 10 disks| Row 2 Col 2| Row 2 Col 3|
+| 20 disks| Row 3 Col 2| Row 3 Col 3|
+| 50 disks| Row 3 Col 2| Row 3 Col 3|
 
 **Table 1** Table of solving time for different numbers of disks for recursive and iterative algorithm
