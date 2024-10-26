@@ -76,17 +76,20 @@ API: RESTful JSON API
 
 The application was developed using Python 3. 
 
-Additionally, it uses Python's module Tkinter.
+If you do not have it installed visit the official [website](https://www.python.org/downloads/) to learn how to do that.
 
-First, clone the repository and install the required packages:
+Additionally, the application uses Python's module [Tkinter](https://docs.python.org/3/library/tkinter.html), is the standard Python interface to the Tcl/Tk GUI toolkit.
+
+To learn more about some of the most commonly used widgets, check out this [article](https://www.geeksforgeeks.org/python-gui-tkinter/#color-option-in-tkinter).
+
+First, clone the repository:
 
 ```bash 
 git clone https://github.com/hristinanikpi/tower_of_hanoi.git
 cd tower_of_hanoi
-pip install requirements.txt 
 ```
 
-Afterwards, run the app, use the following command: 
+Afterwards, use the following command to run the application: 
 
 ```bash 
 python3 app.py 
