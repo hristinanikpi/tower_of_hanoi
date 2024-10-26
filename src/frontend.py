@@ -1,4 +1,4 @@
-from backend import *
+from src.backend import *
 from tkinter import *
 import time 
 
@@ -153,6 +153,8 @@ def animate_solution():
     except ValueError:
         myListBox.delete(0, END)
         myListBox.insert(END, "Please enter a valid number.")
+
+
 
 # Root window
 root = Tk()
