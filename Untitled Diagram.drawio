@@ -7,26 +7,26 @@
         <mxCell id="oworq0zyb9b8xem2JOyv-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oworq0zyb9b8xem2JOyv-2" target="oworq0zyb9b8xem2JOyv-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oworq0zyb9b8xem2JOyv-2" value="&lt;div&gt;&lt;b&gt;User Interface &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Tkinter GUI&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="350" width="120" height="60" as="geometry" />
+        <mxCell id="oworq0zyb9b8xem2JOyv-2" value="&lt;div&gt;&lt;b&gt;User Interface &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Contains Tkinter GUI elements for user input, display of steps, and animation of the solution.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="200" height="110" as="geometry" />
         </mxCell>
         <mxCell id="oworq0zyb9b8xem2JOyv-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oworq0zyb9b8xem2JOyv-3" target="oworq0zyb9b8xem2JOyv-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oworq0zyb9b8xem2JOyv-3" value="&lt;b&gt;Front-end Logic&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="320" y="350" width="130" height="60" as="geometry" />
+        <mxCell id="oworq0zyb9b8xem2JOyv-3" value="&lt;div&gt;&lt;b&gt;Front-end Logic&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Handles user inputs, initializes the game with a specified number of disks, and displays each move.&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="307.5" width="180" height="95" as="geometry" />
         </mxCell>
         <mxCell id="oworq0zyb9b8xem2JOyv-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oworq0zyb9b8xem2JOyv-5" target="oworq0zyb9b8xem2JOyv-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oworq0zyb9b8xem2JOyv-5" value="&lt;b&gt;Back-end Logic&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="590" y="350" width="130" height="60" as="geometry" />
+        <mxCell id="oworq0zyb9b8xem2JOyv-5" value="&lt;div&gt;&lt;b&gt;Back-end Logic&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Computes the steps for solving the Tower of Hanoi, generating moves, and saves them in JSON format.&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="286.25" width="150" height="137.5" as="geometry" />
         </mxCell>
         <mxCell id="oworq0zyb9b8xem2JOyv-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="oworq0zyb9b8xem2JOyv-7" target="oworq0zyb9b8xem2JOyv-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oworq0zyb9b8xem2JOyv-7" value="&lt;b&gt;Data Handeling&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="520" width="120" height="60" as="geometry" />
+        <mxCell id="oworq0zyb9b8xem2JOyv-7" value="&lt;div&gt;&lt;b&gt;Data Handling&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Stores moves as a sequence, which is passed from back-end to front-end for display.&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="190" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
