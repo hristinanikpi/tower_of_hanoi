@@ -109,12 +109,11 @@ python3 app.py
 
 The application for 3 and 4 disks runs as follow: 
 
-<figure markdown>
-    ![Alt text](images/solution_3.png){: style="height:83px"}
-    ![Alt text](images/solution_4.png){: style="height:83px"}
-</figure>
+| | ![Alt text](images/solution_3.png)| ![Alt text](images/solution_3.png) |
+|--------------------------|------------------------------------------|------------------------------------------|
+| **Figure 4** | (a) Tower of Hanoi Solver for 3 disks.| (a) Tower of Hanoi Solver for 4 disks.|
 
-**Figure 4** (a) Tower of Hanoi Solver for 3 disks. (b) Tower of Hanoi for 4 disks. 
+
 
 ## Time Complexity of the Tower of Hanoi Problem
 
