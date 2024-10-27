@@ -40,7 +40,7 @@ def print_solution():
             myCanvas.create_rectangle(100 - width // 2, top_y, 100 + width // 2, top_y + 20, fill="blue")
 
         myCanvas.update()  # Update the canvas immediately
-        myCanvas.after(2000)  # Wait for a brief moment to show the current state
+        myCanvas.after(1000)  # Wait for a brief moment to show the current state
 
         # Record the start time
         start_time = time.time()
@@ -69,7 +69,7 @@ def print_solution():
 
 
         myCanvas.update()  # Update the canvas immediately
-        myCanvas.after(2000)  # Wait for a brief moment to show the current state
+        myCanvas.after(1000)  # Wait for a brief moment to show the current state
 
     # Handle invalid input (e.g., non-integer entries)
     except ValueError:

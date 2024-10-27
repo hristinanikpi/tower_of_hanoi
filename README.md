@@ -113,11 +113,46 @@ The apllication for 4 disks runs as follow:
 
 In order to determine how well the application performs, we calculated the solving time for different numbers of disks.
 
-|    | Recursive Algorithm   | Iterative Algorithm   |
+|  5 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
-| 5 disks| Row 1 Col 2| Row 1 Col 3|
-| 10 disks| Row 2 Col 2| Row 2 Col 3|
-| 20 disks| Row 3 Col 2| Row 3 Col 3|
-| 50 disks| Row 3 Col 2| Row 3 Col 3|
+| 1. try| 0.001874| Row 1 Col 3|
+| 2. try| 0.001886| Row 2 Col 3|
+| 3. try| 0.001813| Row 3 Col 3|
+| 4. try| 0.001815| Row 3 Col 3|
+| 5. try| 0.001800| Row 3 Col 3|
+| **average**| 0.0018376| Row 3 Col 3|
 
-**Table 1** Table of solving time for different numbers of disks for recursive and iterative algorithm
+**Table 1** Table of solving times for 5 disks for both recursive and iterative algorithms.
+
+|  10 disks  | Recursive Algorithm   | Iterative Algorithm   |
+|------------|:----------:|-----------:|
+| 1. try| Row 1 Col 2| Row 1 Col 3|
+| 2. try| Row 2 Col 2| Row 2 Col 3|
+| 3. try| Row 3 Col 2| Row 3 Col 3|
+| 4. try| Row 3 Col 2| Row 3 Col 3|
+| 5. try| Row 3 Col 2| Row 3 Col 3|
+| **average**| Row 3 Col 2| Row 3 Col 3|
+
+**Table 2** Table of solving times for 10 disks for both recursive and iterative algorithms.
+
+|  20 disks  | Recursive Algorithm   | Iterative Algorithm   |
+|------------|:----------:|-----------:|
+| 1. try| Row 1 Col 2| Row 1 Col 3|
+| 2. try| Row 2 Col 2| Row 2 Col 3|
+| 3. try| Row 3 Col 2| Row 3 Col 3|
+| 4. try| Row 3 Col 2| Row 3 Col 3|
+| 5. try| Row 3 Col 2| Row 3 Col 3|
+| **average**| Row 3 Col 2| Row 3 Col 3|
+
+**Table 3** Table of solving times for 20 disks for both recursive and iterative algorithms.
+
+|  50 disks  | Recursive Algorithm | Iterative Algorithm |
+|------------|:----------:|-----------:|
+| 1. try| Row 1 Col 2| Row 1 Col 3|
+| 2. try| Row 2 Col 2| Row 2 Col 3|
+| 3. try| Row 3 Col 2| Row 3 Col 3|
+| 4. try| Row 3 Col 2| Row 3 Col 3|
+| 5. try| Row 3 Col 2| Row 3 Col 3|
+| **average**| Row 3 Col 2| Row 3 Col 3|
+
+**Table 4** Table of solving times for 50 disks for both recursive and iterative algorithms.
