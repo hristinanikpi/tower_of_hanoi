@@ -162,3 +162,17 @@ In order to determine how well the application performs, we calculated the solvi
 | **average**| Row 3 Col 2| Row 3 Col 3|
 
 **Table 4** Table of solving times for 50 disks for both recursive and iterative algorithms.
+
+## Future Improvements 
+
+The application work well and has all the ecential elements. However, there is always room for improvement. Some of the extentions that can be done to this work include: 
+
+1. Enhanced Visuals: Improve the design and add animations or 3D graphics for a more immersive experience.
+1. Web and Mobile Compatibility: Develop a web application as well as its mobile-responsive version for broader accessibility.
+1. Alternative Algorithms: Showcase different methods or optimization techniques such as Q-learning.
+1. Statistics Tracking: Track user performance metrics, such as moves taken and time spent.
+1. Difficulty Levels: Offer varied levels to cater to beginners and advanced users.
+
+## Conclusion
+
+The Tower of Hanoi application offers users an interactive way to engage with one of the classic algorithmic puzzles, enhancing understanding of recursion, logic, and algorithmic thinking. With its visual approach, this tool serves as both an educational resource and a fun exercise in problem-solving, encouraging users to explore the mechanics of the puzzle in a hands-on manner.
