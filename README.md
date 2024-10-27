@@ -125,48 +125,52 @@ In order to determine how well the application performs, the average solving tim
 
 ### 5 disks
 
+Tower of Hanoi with **5** disks is solvable with **31** move in total. 
+
 |  5 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
-| 1. try| 0.001874| 0.002447|
-| 2. try| 0.001886| 0.002070|
-| 3. try| 0.001813| 0.001859|
-| 4. try| 0.001815| 0.002078|
-| 5. try| 0.001800| 0.002070|
-| **average**| 0.0018376| 0.002053|
+| 1st try| 0.001874| 0.002447|
+| 2nd try| 0.001886| 0.002070|
+| 3rd try| 0.001813| 0.001859|
+| 4th try| 0.001815| 0.002078|
+| 5th try| 0.001800| 0.002070|
+| **average**| 0.001838| 0.002053|
 
 **Table 1** Table of solving times for 5 disks for both recursive and iterative algorithms.
 
 ### 10 disks
 
+Tower of Hanoi with **10** disks is solvable with **1 023** moves in total. 
+
 |  10 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
-| 1. try| 0.016476| 0.017183|
-| 2. try| 0.017035| 0.019195|
-| 3. try| 0.016347| 0.017300|
-| 4. try| 0.016690| 0.018979|
-| 5. try| 0.016434| 0.022268|
+| 1st try| 0.016476| 0.017183|
+| 2nd try| 0.017035| 0.019195|
+| 3rd try| 0.016347| 0.017300|
+| 4th try| 0.016690| 0.018979|
+| 5th try| 0.016434| 0.022268|
 | **average**| 0.016596| 0.018985|
 
 **Table 2** Table of solving times for 10 disks for both recursive and iterative algorithms.
 
 ### 20 disks
 
+Tower of Hanoi with **20** disks is solvable with **1 048 576** moves in total.
+
 |  20 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
-| 1. try| 3.537602| 3.672936|
-| 2. try| 3.583698| 3.574592|
-| 3. try| 3.535073| 3.598811|
-| 4. try| 3.592360| 3.672235|
-| 5. try| 3.502956| 3.592561|
+| 1st try| 3.537602| 3.672936|
+| 2nd try| 3.583698| 3.574592|
+| 3rd try| 3.535073| 3.598811|
+| 4th try| 3.592360| 3.672235|
+| 5th try| 3.502956| 3.592561|
 | **average**| 3.550258| 3.622223|
 
 **Table 3** Table of solving times for 20 disks for both recursive and iterative algorithms.
 
 ### 50 disks
 
-while 5 disks take a manageable time, 50 disks would take 2<sup>50</sup> − 1 moves, which is infeasible to compute in a reasonable time. Therefore, approximate time was calculated:
-
-...
+while 5 disks take a manageable time, 50 disks would take **1 125 899 906 842 624** moves, which is infeasible to compute in a reasonable time. 
 
 ## Future Improvements 
 
