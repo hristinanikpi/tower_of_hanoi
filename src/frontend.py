@@ -14,7 +14,10 @@ def print_solution():
     # Read number of disks and check if it is valid 
     input_value = myText.get()
     if not input_value:
-        myCanvas.delete("all")  # Clear previous drawings
+        # Clear previous solution if there is any 
+        myCanvas.delete("all")  
+        timeLabel.config(text="")
+        rodLabel.config(text="")
         myListBox.delete(0, END)
         myListBox.insert(END, "Please enter a number grater than 2.")
         return
@@ -23,20 +26,23 @@ def print_solution():
         # Convert the input value to intiger and check if it is less than 3
         n = int(input_value)
         if n < 3:
-            myCanvas.delete("all")  # Clear previous drawings
+            # Clear previous solution if there is any 
+            myCanvas.delete("all")  
+            timeLabel.config(text="")
+            rodLabel.config(text="")
             myListBox.delete(0, END)
             myListBox.insert(END, "Please enter a number greater than 2.")
             return
         
-        # Draw the rods and the initial positions of the disks
-        myCanvas.delete("all")  # Clear previous drawings
+        # Display the initial state of the disks
+        myCanvas.delete("all")  
         rodLabel.config(text="A                  B                  C")
         for i in range(3):
             myCanvas.create_line(100 + i*100, 180, 100 + i*100, 50, width=6, fill="black")
-        base_y = 180
+
         for i in range(n):
             width = 20 + (n - i - 1) * 20  # Start with the widest disk at the bottom
-            top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
+            top_y = 180 - (i + 1) * 20  # Place each disk higher than the previous one, with base 180
             myCanvas.create_rectangle(100 - width // 2, top_y, 100 + width // 2, top_y + 20, fill="blue")
 
         myCanvas.update()  # Update the canvas immediately
@@ -48,7 +54,7 @@ def print_solution():
         # Get the list of moves from tower_of_hanoi_service
         moves = tower_of_hanoi_service(n)["moves"]
         
-        # Display the solution by printing all moves into the list box
+        # Display the solution by printing all moves into the listbox
         myListBox.delete(0, END)
         for i, move in enumerate(moves):
             myListBox.insert(END, str(i + 1) + ". " + move)
@@ -57,16 +63,16 @@ def print_solution():
         elapsed_time = time.time() - start_time 
         timeLabel.config(text=f"Time taken: {elapsed_time:.6f} seconds")
 
-        myCanvas.delete("all")  # Clear previous drawings
-        #rodLabel.config(text="A                  B                  C")
+        # Display the final position of the disks
+        myCanvas.delete("all")  
+        rodLabel.config(text="A                  B                  C")
         for i in range(3):
             myCanvas.create_line(100 + i*100, 180, 100 + i*100, 50, width=6, fill="black")
-        base_y = 180
+
         for i in range(n):
             width = 20 + (n - i - 1) * 20  # Start with the widest disk at the bottom
-            top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
+            top_y = 180 - (i + 1) * 20  # Place each disk higher than the previous one, with base 180
             myCanvas.create_rectangle(300 - width // 2, top_y, 300 + width // 2, top_y + 20, fill="blue")
-
 
         myCanvas.update()  # Update the canvas immediately
         myCanvas.after(1000)  # Wait for a brief moment to show the current state
@@ -121,10 +127,9 @@ def animate_solution():
         for i in range(3):
             myCanvas.create_line(100 + i*100, 180, 100 + i*100, 50, width=6, fill="black")
 
-        base_y = 180
         for i in range(n):
             width = 20 + (n - i - 1) * 20  # Start with the widest disk at the bottom
-            top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
+            top_y = 180 - (i + 1) * 20  # Place each disk higher than the previous one, with base 180
             myCanvas.create_rectangle(100 - width // 2, top_y, 100 + width // 2, top_y + 20, fill="blue")
 
 
@@ -134,19 +139,18 @@ def animate_solution():
         rodLabel.config(text="A                  B                  C")
         for i in range(3):
             myCanvas.create_line(100 + i*100, 180, 100 + i*100, 50, width=6, fill="black")
-        base_y = 180
+        
         for i in range(n):
             width = 20 + (n - i - 1) * 20  # Start with the widest disk at the bottom
-            top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
+            top_y = 180 - (i + 1) * 20  # Place each disk higher than the previous one, with base 180
             myCanvas.create_rectangle(100 - width // 2, top_y, 100 + width // 2, top_y + 20, fill="blue")
 
 
-         # Initialize the towers
+         # Initialize the rods
         global towers
         disks = list(range(n))
         disks.reverse()
-        towers = {"A": list(range(n, 0, -1)), "B": [], "C": []}  # rod 'A' has all disks, others are empty
-
+        towers = {"A": list(range(n, 0, -1)), "B": [], "C": []}  # rod A has all disks, others are empty
 
 
         for i, move in enumerate(moves):
@@ -173,7 +177,7 @@ def animate_solution():
 
 
 
-# Root window
+# Root window for the app
 root = Tk()
 root.title("Tower of Hanoi Solver")
 root.geometry('800x800')
