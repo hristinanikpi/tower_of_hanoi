@@ -45,7 +45,13 @@ The problem can be solved with a few different algorithms:
 
 For this application, we chose to implement both recursive and iterative algorithm.   
 
-## Application Diagram 
+## Application Architecture Diagram 
+
+To create an effective application diagram for your Tower of Hanoi project, To visualizing the structure of the application, especially how its main components interact, we created an effective application diagram using [draw.io](https://app.diagrams.net/). 
+
+![Alt text](images/diagram.png) 
+
+**Figure 2** Application Architecture Diagram.
 
 ## Tech Stack
 
@@ -101,13 +107,13 @@ The application for 3 disks runs as follow:
 
 ![Alt text](images/solution_3_disks.png) 
 
-**Figure 2** Tower of Hanoi Solver for 3 disks 
+**Figure 3** Tower of Hanoi Solver for 3 disks.
 
 The apllication for 4 disks runs as follow:
 
 ![Alt text](images/solution_4_disks.png) 
 
-**Figure 3** Tower of Hanoi Solver for 4 disks 
+**Figure 4** Tower of Hanoi Solver for 4 disks. 
 
 ## Solving Time
 
