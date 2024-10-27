@@ -39,6 +39,9 @@ def print_solution():
             top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
             myCanvas.create_rectangle(100 - width // 2, top_y, 100 + width // 2, top_y + 20, fill="blue")
 
+        myCanvas.update()  # Update the canvas immediately
+        myCanvas.after(2000)  # Wait for a brief moment to show the current state
+
         # Record the start time
         start_time = time.time()
 
@@ -53,6 +56,20 @@ def print_solution():
         # Calculate elapsed time and print it out
         elapsed_time = time.time() - start_time 
         timeLabel.config(text=f"Time taken: {elapsed_time:.6f} seconds")
+
+        myCanvas.delete("all")  # Clear previous drawings
+        #rodLabel.config(text="A                  B                  C")
+        for i in range(3):
+            myCanvas.create_line(100 + i*100, 180, 100 + i*100, 50, width=6, fill="black")
+        base_y = 180
+        for i in range(n):
+            width = 20 + (n - i - 1) * 20  # Start with the widest disk at the bottom
+            top_y = base_y - (i + 1) * 20  # Place each disk higher than the previous one
+            myCanvas.create_rectangle(300 - width // 2, top_y, 300 + width // 2, top_y + 20, fill="blue")
+
+
+        myCanvas.update()  # Update the canvas immediately
+        myCanvas.after(2000)  # Wait for a brief moment to show the current state
 
     # Handle invalid input (e.g., non-integer entries)
     except ValueError:
@@ -210,7 +227,7 @@ rodLabel.place(relx=0.5, rely=0.9, anchor=CENTER)
 rodLabel.configure(background='white')
 
 # Button Widget for providing solution to the puzzle 
-myButton = Button(root, text = "Solve", font=("Arial",13), fg = "white", command=animate_solution)
+myButton = Button(root, text = "Solve", font=("Arial",13), fg = "white", command=print_solution)
 myButton.configure(background='blue')
 myButton.place(relx=0.5, rely=0.17, anchor=CENTER)
 
