@@ -11,9 +11,13 @@ This project was done as part of the interview process for the position of the J
 
 [The tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) is a mathematical puzzle. It consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
 
-![Alt text](images/hanoi.png) 
+![Alt text](images/tower_of_hanoi.webp) 
 
-**Figure 1** Tower of Hanoi Illustration
+**Figure 1** Tower of Hanoi initial state. 
+
+![Alt text](images/tower_of_hanoi_4.gif)
+
+**Figure 2** Tower of Hanoi solution for 4 disks. 
 
 ## Problem Statement
 
@@ -43,7 +47,7 @@ The problem can be solved with a few different algorithms:
 1. Iterative Algorithm - The iterative algorithm for the Tower of Hanoi employs a systematic approach to move disks without recursion, often utilizing a loop and following specific rules based on the parity of the number of disks. It typically involves moving disks between the rods in a predetermined sequence, ensuring that smaller disks are always placed on top of larger disks. This approach also requires 2<sup>n</sup> − 1 moves, providing an efficient way to solve the puzzle without the overhead of recursive function calls.
 1. Recursive Algorithm - The recursive algorithm for solving the Tower of Hanoi involves breaking down the problem into smaller subproblems. It recursively moves the top n−1n−1 disks from the source rod to an auxiliary rod, then moves the largest disk directly to the destination rod, and finally moves the n−1n−1 disks from the auxiliary rod to the destination rod. This elegant method utilizes the principle of recursion to achieve the solution in 2<sup>n</sup> − 1 moves.
 
-For this application, we chose to implement both recursive and iterative algorithm.   
+For this application, both recursive and iterative algorithms were implemented.   
 
 ## Application Architecture Diagram 
 
@@ -51,7 +55,7 @@ To create an effective application diagram for your Tower of Hanoi project, To v
 
 ![Alt text](images/diagram.png) 
 
-**Figure 2** Application Architecture Diagram.
+**Figure 3** Application architecture diagram.
 
 ## Tech Stack
 
@@ -103,21 +107,22 @@ python3 app.py
 
 ## Demonstration 
 
-The application for 3 disks runs as follow: 
+The application for 3 and 4 disks runs as follow: 
 
-![Alt text](images/solution_3_disks.png) 
+![Alt text](images/solution_3.png) 
+![Alt text](images/solution_4.png) 
 
-**Figure 3** Tower of Hanoi Solver for 3 disks.
+**Figure 4** (a) Tower of Hanoi Solver for 3 disks. (b) Tower of Hanoi for 4 disks. 
 
-The apllication for 4 disks runs as follow:
+## Time Complexity of the Tower of Hanoi Problem
 
-![Alt text](images/solution_4_disks.png) 
-
-**Figure 4** Tower of Hanoi Solver for 4 disks. 
+The Tower of Hanoi problem grows exponentially, meaning each additional disk doubles the time required to solve it. The minimum moves needed follow the formula 2<sup>n</sup> − 1, where n is the number of disks. 
 
 ## Solving Time
 
-In order to determine how well the application performs, we calculated the average solving time for different numbers of disks rounded to 6 digits.
+In order to determine how well the application performs, the average solving time for different numbers of disks was calculated, rounded to 6 digits.
+
+### 5 disks
 
 |  5 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
@@ -126,9 +131,11 @@ In order to determine how well the application performs, we calculated the avera
 | 3. try| 0.001813| 0.001859|
 | 4. try| 0.001815| 0.002078|
 | 5. try| 0.001800| 0.002070|
-| **average**| 0.0018376| Row 3 Col 3|
+| **average**| 0.0018376| 0.002053|
 
 **Table 1** Table of solving times for 5 disks for both recursive and iterative algorithms.
+
+### 10 disks
 
 |  10 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
@@ -137,9 +144,11 @@ In order to determine how well the application performs, we calculated the avera
 | 3. try| 0.016347| 0.017300|
 | 4. try| 0.016690| 0.018979|
 | 5. try| 0.016434| 0.022268|
-| **average**| 0.016596| Row 3 Col 3|
+| **average**| 0.016596| 0.018985|
 
 **Table 2** Table of solving times for 10 disks for both recursive and iterative algorithms.
+
+### 20 disks
 
 |  20 disks  | Recursive Algorithm   | Iterative Algorithm   |
 |------------|:----------:|-----------:|
@@ -148,12 +157,15 @@ In order to determine how well the application performs, we calculated the avera
 | 3. try| 3.535073| 3.598811|
 | 4. try| 3.592360| 3.672235|
 | 5. try| 3.502956| 3.592561|
-| **average**| 3.550258| 3.|
+| **average**| 3.550258| 3.622223|
 
 **Table 3** Table of solving times for 20 disks for both recursive and iterative algorithms.
 
+### 50 disks
 
-**Table 4** Table of solving times for 50 disks for both recursive and iterative algorithms.
+while 5 disks take a manageable time, 50 disks would take 2<sup>50</sup> − 1 moves, which is infeasible to compute in a reasonable time. Therefore, approximate time was calculated:
+
+...
 
 ## Future Improvements 
 
