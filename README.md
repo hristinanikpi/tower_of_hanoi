@@ -53,9 +53,9 @@ For this application, both recursive and iterative algorithms were implemented.
 
 To create an effective application diagram for your Tower of Hanoi project, To visualizing the structure of the application, especially how its main components interact, we created an effective application diagram using [draw.io](https://app.diagrams.net/). 
 
-![Alt text](images/diagram.png) 
+![Alt text](images/diagram.drawio.png) 
 
-**Figure 3** Application architecture diagram.
+**Figure 3** Application Architecture Diagram.
 
 ## Tech Stack
 
