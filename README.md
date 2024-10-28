@@ -9,7 +9,9 @@ This project was done as part of the interview process for the position of the J
 
 ## History
 
-[The tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) is a mathematical puzzle. It consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
+Chinese mathematical puzzles have fascinated thinkers for centuries, blending logic, ingenuity, and creativity. From ancient texts like the Nine Chapters on the Mathematical Art to popular puzzles like the Tower of Hanoi, these puzzles serve not only as challenges but also as tools for teaching mathematical principles. In many cases, these puzzles have crossed cultural boundaries, inspiring mathematicians worldwide to explore complex mathematical ideas. Today, we'll dive into one such puzzle, exploring both its historical context and its applications in modern problem-solving and algorithm design.
+
+[The tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) is a mathematical puzzle that consists of three rods and several disks of different diameters, which can slide onto any rod. The puzzle starts with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a canonical shape. The objective of the puzzle is to move the entire stack to the last rod.
 
 ![Alt text](images/tower_of_hanoi.webp) 
 
