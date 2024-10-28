@@ -19,19 +19,19 @@ def print_solution():
         timeLabel.config(text="")
         rodLabel.config(text="")
         myListBox.delete(0, END)
-        myListBox.insert(END, "Please enter a number grater than 2.")
+        myListBox.insert(END, "Please enter a number grater than 0.")
         return
 
     try:
         # Convert the input value to intiger and check if it is less than 3
         n = int(input_value)
-        if n < 3:
+        if n < 1:
             # Clear previous solution if there is any 
             myCanvas.delete("all")  
             timeLabel.config(text="")
             rodLabel.config(text="")
             myListBox.delete(0, END)
-            myListBox.insert(END, "Please enter a number greater than 2.")
+            myListBox.insert(END, "Please enter a number of disks.")
             return
         
         # Display the initial state of the disks
@@ -75,7 +75,7 @@ def print_solution():
             myCanvas.create_rectangle(300 - width // 2, top_y, 300 + width // 2, top_y + 20, fill="blue")
 
         myCanvas.update()  # Update the canvas immediately
-        myCanvas.after(1000)  # Wait for a brief moment to show the current state
+        myCanvas.after(500)  # Wait for a brief moment to show the current state
 
     # Handle invalid input (e.g., non-integer entries)
     except ValueError:
@@ -167,7 +167,7 @@ def animate_solution():
             draw_towers()  # Redraw the rods after each move
             
             myCanvas.update()  # Update the canvas immediately
-            myCanvas.after(1000)  # Wait for a brief moment to show the current state
+            myCanvas.after(500)  # Wait for a brief moment to show the current state
 
     
     # Handle invalid input (e.g., non-integer entries)
@@ -206,7 +206,6 @@ myListBox.configure(yscrollcommand=myScrollBar.set)
 myFrame2 = Frame(root)
 myFrame2.place(relx=0.5, rely=0.72, anchor=CENTER)
 myCanvas = Canvas(myFrame2, width=400, height=200, bg="white")
-#myCanvas.pack(side="left", fill=BOTH, expand=True) 
 scrollBarV = Scrollbar(myFrame2, orient="vertical",command=myCanvas.yview)
 scrollBarV.pack(side ="right", fill = "y" )
 scrollBarH = Scrollbar(myFrame2, orient="horizontal",command=myCanvas.xview)
