@@ -170,7 +170,7 @@ Tower of Hanoi with **20** disks is solvable with **1 048 576** moves in total.
 
 ### 50 disks
 
-while 5 disks take a manageable time, 50 disks would take **1 125 899 906 842 624** moves, which is infeasible to compute in a reasonable time. 
+While 5 disks take a manageable time, 50 disks would take **1 125 899 906 842 624** moves, which is infeasible to compute in a reasonable time. 
 
 ## Future Improvements 
 
