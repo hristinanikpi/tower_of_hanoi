@@ -174,8 +174,8 @@ def animate_solution():
     except ValueError:
         myListBox.delete(0, END)
         myListBox.insert(END, "Please enter a valid number.")
-
-
+        
+# GUI elemets for the application 
 
 # Root window for the app
 root = Tk()
